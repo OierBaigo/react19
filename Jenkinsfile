@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Ejecutar Tests con Cobertura') {
             steps {
-                sh 'npm test -- --coverage --pashWithNoTest'
+                sh 'npx jest --coverage --pashWithNoTest'
             }
         }
 
