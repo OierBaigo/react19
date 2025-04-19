@@ -32,12 +32,6 @@ pipeline {
                 sh 'npx jest --coverage --passWithNoTests'
             }
         }
-
-        stage('Publicar Resultados de Cobertura') {
-            steps {
-                sh 'npm run coverage-report'  
-            }
-        }
     }
 
     post {
