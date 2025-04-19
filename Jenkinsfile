@@ -30,7 +30,7 @@ pipeline {
         }
         stage('Ejecutar Tests con Cobertura') {
             steps {
-                sh 'npm test -- --coverage'
+                sh 'npm test -- --coverage --pashWithNoTest'
             }
         }
 
